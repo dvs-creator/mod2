@@ -1,0 +1,107 @@
+.capabilities__label {
+    @include section__label;
+}
+.capabilities__header{
+    @include section__header;
+}
+.capabilities__subheader{
+    @include section__subheader;
+}
+
+.capabilities {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+    background: url('../img/capabilities_bg.jpg') center center/cover no-repeat;
+    .row {
+        margin-top: 32px;
+    }
+    &__item {
+        position: relative;        
+
+        width: 300px;
+        height: 280px;
+
+        margin: 0 auto 19px auto;
+
+        background: url('../img/citem1.jpg') center center/cover no-repeat;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index:1;
+            width: 100%;
+            height: 280px;
+            background-color: #25232f; 
+            opacity: 0.9;
+            
+            z-index: 1;
+        }
+        &__subtitle {
+            width: 100%;
+            overflow: auto;
+            margin: auto;
+            position: absolute;
+            top: 31%; left: 0; bottom: 0; right: 0;            
+            z-index: 2;
+
+            margin: 0 auto;
+
+            font-size: 1.5rem;
+            line-height: 1.29;
+            text-align: center;
+            font-weight: normal;
+
+            text-transform: uppercase;
+            color: #fff;
+        }
+        &__plus {            
+            position: absolute;
+            bottom: 9%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            z-index: 2;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 26px;
+            height: 26px;
+
+            border-radius: 100%;
+            background-color: #000000;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 14px;
+                height: 2px;
+                background-color: $primary;
+                transition: 0.3s background;
+            }
+            &::after {
+                content: '';
+
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: 2px;
+                height: 14px;
+                background-color: $primary;
+                transition: 0.3s background;
+            }
+            &:hover {
+                &::after, &::before {
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+   
+}

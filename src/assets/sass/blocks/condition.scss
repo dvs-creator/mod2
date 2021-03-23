@@ -1,0 +1,64 @@
+.condition__label {
+    @include section__label;
+}
+.condition__header {
+    @include section__header;
+    margin-bottom: 40px;
+}
+.condition {
+    padding-top: 61px;
+    padding-bottom: 61px;
+    &__block {
+        margin: 33px 0;
+    }
+    &__title {
+        font-size: 22px;
+        color: $primary;
+        line-height: 24px;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 50px; 
+        margin-top: 22px;
+        &__item {
+            position: relative;
+            font-size: 17px;
+            margin-bottom: 10px;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -31px;
+                top: 3px;
+                width: 21px;
+                height: 20px;
+                background-image: url('../img/icons/check_blue.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                fill: #1ca8c3;
+
+                vertical-align: middle;
+                transform: translate(-5px, -2px);
+            }
+        }   
+    }
+    &__descr {
+        margin-top: 25px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 24px;
+        color: #1ca8c3;
+    }
+    .warning {
+        .condition__title {
+            color: $secondary;            
+        }
+        .condition__list {
+            &__item {
+                &:before {
+                    background-image: url('../img/icons/check_pink.svg');
+                }
+            }
+        }
+    }
+}

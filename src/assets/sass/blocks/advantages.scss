@@ -1,0 +1,41 @@
+.advantages {
+    padding: 48px 0 0 0 ;
+}
+.advantages__label {
+    @include section__label;
+}
+.advantages__header {
+    @include section__header;
+    margin-bottom: 40px;
+}
+.advantages__card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+.advantages__icon {
+    width: 113px;
+    height: 113px;
+    
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.advantages__descr {
+    width: 340px;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    color: #202020;
+}
+.advantages__descr span {
+    font-size: 17px;
+    font-weight: normal;
+    color: #1eacc7;
+}

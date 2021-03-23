@@ -1,0 +1,34 @@
+.cities__label {
+    @include section__label;
+    background-color: #fff;
+    color: #000;
+}
+.cities__header{
+    @include section__header;
+    color: #fff;
+}
+.cities__subheader{
+    @include section__subheader;
+    color: #fff;
+}
+.cities {
+    min-height: 717px;
+    position: relative;
+
+    background-color: #080816;
+    background: url('../img/cities_bg.jpg')  center center/cover no-repeat;
+    padding-top: 49px;
+}
+.watchall {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    &__link {
+        font-size: 15px;
+        font-weight: normal;
+        text-align: center;
+        color: #1fbad6;
+        text-transform: uppercase;        
+    }
+}

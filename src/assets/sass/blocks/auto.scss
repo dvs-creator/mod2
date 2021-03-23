@@ -1,0 +1,41 @@
+.auto {
+    position: relative;
+}
+.auto__image {
+    position: absolute;
+    top: 232px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.auto__top {    
+    padding-top: 57px;
+    background-color: #070716;
+    min-height: 500px;
+}
+.auto__label {
+    @include section__label;
+    background-color: #fff;
+    color: #000;
+}
+.auto__header {
+    @include section__header;
+    color: #fff;
+    padding-top: 32px;
+}
+.auto__subheader {
+    @include section__subheader;
+    color: #fff;
+}
+.auto__bottom {
+    min-height: 397px;
+    background: url('../img/capabilities_bg.jpg') center center/cover no-repeat;
+}
+.auto__descr {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.41;
+    text-align: center;
+    color: #222222;
+
+    padding-top: 217px;
+}

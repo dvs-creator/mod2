@@ -1,0 +1,63 @@
+.promo {
+    width: 100%;
+    min-height: 800px;
+    background: url('../img/header_bg.jpg') center center/cover no-repeat;
+
+    text-align: center;
+    color: #fff;   
+    
+    padding-top: 180px;
+    padding-bottom: 135px;
+
+    position: relative;
+}
+.promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+.promo > * {
+    z-index: 2;
+}
+.promo__header {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0; 
+}
+.promo__subheader {
+    font-size: 36px;
+    font-weight: bold;
+
+    margin: 22px 0 0 0;
+    line-height: 36px;
+}
+.promo__descr {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.33;
+    
+    margin-top: 23px;
+}
+.promo__btn {
+    width: 259px;
+    height: 63px;
+ 
+    color: #fff;
+
+    box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12);
+    border: 0;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+    text-transform: uppercase;
+
+    margin-top: 118px;
+ 
+    @include btn_hover;
+}
